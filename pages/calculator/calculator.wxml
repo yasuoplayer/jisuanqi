@@ -1,0 +1,36 @@
+
+  <view id='showbox' class='{{fontSize?"fontSizeA":"fontSizeB"}}'>
+    {{number1}}
+  </view>
+  <view class='btns'>
+   <view class='row'>
+    <view class='btn' bindtap='clearNumber'>AC</view>
+    <view class='btn' data-n='fan' bindtap='fan'>+/-</view>
+    <view class='{{operation=="%"?"btn select":"btn"}}' data-n='%' bindtap='operation'>%</view>
+    <view class='{{operation=="÷"?"btn select":"btn"}}' data-n='÷' bindtap='operation'>÷</view>
+   </view>
+   <view class='row'>
+      <view class='btn' data-n='7' bindtap='inputNumber'>7</view>
+      <view class='btn' data-n='8' bindtap='inputNumber'>8</view>
+      <view class='btn' data-n='9' bindtap='inputNumber'>9</view>
+      <view class='{{operation=="×"?"btn select":"btn"}}' data-n='×' bindtap='operation'>×</view>
+   </view>
+   <view class='row'>
+      <view class='btn' data-n='4' bindtap='inputNumber'>4</view>
+      <view class='btn' data-n='5' bindtap='inputNumber'>5</view>
+      <view class='btn' data-n='6' bindtap='inputNumber'>6</view>
+      <view class='{{operation=="-"?"btn select":"btn"}}' data-n='-' bindtap='operation'>-</view>
+   </view>
+   <view class='row'>
+      <view class='btn' data-n='1' bindtap='inputNumber'>1</view>
+      <view class='btn' data-n='2' bindtap='inputNumber'>2</view>
+      <view class='btn' data-n='3' bindtap='inputNumber'>3</view>
+      <view class='{{operation=="+"?"btn select":"btn"}}' data-n='+' bindtap='operation'>+</view>
+   </view>
+   <view class='row'>
+      <view class='btn special' data-n='0' bindtap='inputNumber'>0</view>
+      <view class='btn' data-n='.' bindtap='addPoint' >.</view>
+      <view class='btn' data-n='deng' bindtap='cal'>=</view>
+   </view>
+  </view>
+
